@@ -27,7 +27,6 @@ $(document).ready(function(){
     //listID: Allow this function to add content to different lists, if I ever expand it to have such functionality.
     function AddItemToList(newItem, listID){
         let existingHtml = $(listID).html();
-        $(listID).html(`${existingHtml}<li><input type="checkbox"><label> ${newItem}</labe></li>`);
-        //UpdateCheckboxList();
+        $(listID).html(`${existingHtml}<li><input type="checkbox"><label> ${newItem}</label></li>`);
     }
 });
